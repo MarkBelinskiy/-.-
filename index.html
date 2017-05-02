@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<!-- Required meta tags -->
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css" integrity="sha384-rwoIResjU2yc3z8GV/NPeZWAv56rSmLldC3R/AZzGRnGxQQKnKkoFVhFQhNUwEyJ" crossorigin="anonymous">
+	<link rel="stylesheet" href="css/font-awesome.min.css">
+	<link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+	<div class="container-fluid filter">
+		<a href="http://astor.idteam.info/strana/index.html"><img src="img/logo.svg" class="logo" alt=""></a>
+		<div class="slogan"><img src="img/slogan.png" class="mh-100 mw-100" alt=""></div>
+		<div class="play">
+			<i class="fa fa-play" aria-hidden="true"></i>
+		</div>
+		<div class="row mnh-100">
+			<div class="col align-self-end">
+				<div class="row">
+					<div class="col-sm-6 col-lg-12 push-md-6 push-lg-0 text-center join">
+						<button type="button" class="button button4" id="openPop">Хочу участвовать</button>
+					</div>
+					<div class="col-sm-6 col-lg-12 pull-md-6 pull-lg-0 text-center follow">
+						<div class="row">
+							<div class="col-lg-4 col-sm-12  text-center info">
+								<span>Следите за информацией:</span>
+								<ul>
+									<li><i class="fa fa-facebook" aria-hidden="true"></i></li>
+									<li><i class="fa fa-vk" aria-hidden="true"></i></li>
+									<li><i class="fa fa-odnoklassniki" aria-hidden="true"></i></li>
+									<li><i class="fa fa-instagram" aria-hidden="true"></i></li>
+								</ul>
+							</div>
+						</div>
+					</div>
+					<div class="col-12">
+						<div class="row foot">
+							<div class="col-6 text-left">
+								<span>ООО «Веб Диалог», ОГРН 1097746454783</span>
+							</div>
+							<div class="col-6 text-right font">
+								<span id="openPolitic">Политика конфиденциальности</span>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="modal fade" id="mail" tabindex="-1" role="dialog" aria-labelledby="mailLabel" aria-hidden="true">
+		<div class="modal-dialog" role="document">
+			<div class="modal-content">
+				<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+					<i class="fa fa-times" aria-hidden="true"></i>
+				</button>
+				<div class="center">
+					<div class="start">
+						<img src="img/start.png" alt="">
+					</div>
+					<div class="col">
+						<h5 class="modal-title" id="mailLabel">Оставь свой электронный адрес и готовься.</h5>
+					</div>
+					<div class="col">
+						<h5 class="modal-title" id="mailLabel"> Мы сообщим, когда все начнется</h5>
+					</div>
+					<form>
+						<div class="form-group ">
+							<input type="text" class="form-control" placeholder="Адрес электронной почты" id="email">
+						</div>
+					</form>
+					<div class="send">
+						<button type="button" id="closePop" class="button button4" disabled>Отправить</button>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="modal fade" id="send" tabindex="-1" role="dialog" aria-labelledby="sendLabel" aria-hidden="true">
+		<div class="modal-dialog" role="document">
+			<div class="modal-content">
+				<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+					<i class="fa fa-times" aria-hidden="true"></i>
+				</button>
+				<div class="center">
+					<div class="col">
+						<h5 class="modal-title" id="sendLabel">Отлично. Мы скоро свяжемся с тобой.</h5>
+					</div>
+					<div class="col">
+						<h5 class="modal-title" id="sendLabel">Жди новостей!</h5>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="modal fade" id="politic" tabindex="-1" role="dialog" aria-labelledby="politicLabel" aria-hidden="true">
+		<div class="modal-dialog" role="document">
+			<div class="modal-content">
+				<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+					<i class="fa fa-times" aria-hidden="true"></i>
+				</button>
+				<div class="top">
+					<div class="row">
+						<div class=" col-xl-6  offset-xl-3  col-10  offset-1 align-self-center">
+							<p class="text-center">Сбор информации</p>
+							<p> При оставлении заявки на ресурсе веб-студии «Страна Сильнейших» участники предоставляют следующую сведения:</p>
+							<p class="text-center"> Имя.</p>
+							<p class="text-center"> Контактный E-mail (обязательно).</p>
+							<p> Также администрация ООО Веб Диалог получает данные об IP-адресе посетителей, а также о типе браузера, времени нахождения на сайте и прочие подобные сведения. Сбор ведётся с помощью сервисов статистики.</p>
+							<p class="text-center"> Использование информации</p>
+							<p> Вся полученная информация используется администрацией ООО Веб Диалог исключительно в целях связи с клиентом. ООО Веб Диалог имеет право направлять клиенту информационные сообщения (новостную рассылку), если он подписался на них.</p>
+							<p class="text-center"> Защита персональных данных</p>
+							<p> ООО Веб Диалог обязуется не разглашать сведения, полученные от клиентов. Она хранится в базе данных на локальном компьютере администрации ООО Веб Диалог. Доступ к компьютеру надёжно защищён паролем, который имеется только у администратора сайта.</p>
+							<p class="text-center"> Предоставление данных третьим лицам</p>
+							<p> Полученные сведения не могут быть переданы третьим лицам, за исключением следующих случаев:</p>
+							<p> Для исполнения обязательств перед участником – только с его разрешения.</p>
+							<p> В соответствии с обоснованными и применимыми требованиями закона.</p>
+							<p class="text-center"> Контакты</p>
+							<p> По всем вопросам вы можете обращаться к администрации сайта.</p>
+							<p> E-mail: <a href="mailto:admin@strong-country.ru"> admin@strong-country.ru</a> </p>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<!-- jQuery first, then Tether, then Bootstrap JS. -->
+	<script src="https://code.jquery.com/jquery-3.1.1.slim.min.js" integrity="sha384-A7FZj7v+d/sdmMqp/nOQwliLvUsJfDHW+k9Omg/a/EheAdgtzNs3hpfag6Ed950n" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.4.0/js/tether.min.js" integrity="sha384-DztdAPBWPRXSA/3eYEEUWrWCy7G5KFbe8fFjk5JAIxUYHKkDx6Qin1DkWx51bBrb" crossorigin="anonymous"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/js/bootstrap.min.js" integrity="sha384-vBWWzlZJ8ea9aCX4pEW3rVHjgjt7zpkNpZk+02D9phzyeVkE+jo0ieGizqPLForn" crossorigin="anonymous"></script>
+	<script src="js/script.js"></script>
+</body>
+
+</html>
